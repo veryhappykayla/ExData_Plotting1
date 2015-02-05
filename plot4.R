@@ -30,11 +30,11 @@ par(mfrow = c(2,2)) #left then right >> top then bottom
 
 #----------------
 
-# Top left plot ("plot2")
+# Top left plot ("plot2" with modified y-axis label)
 plot(data$Global_active_power,
      type = "l",
      xaxt = "n", xlab = "", # Suppress x-axis
-     ylab = "Global Active Power (kilowatts)")
+     ylab = "Global Active Power")
 axis(side = 1,
      at = c(1, as.integer(nrow(data)/2), nrow(data)),
      labels = c("Thu", "Fri", "Sat"))
